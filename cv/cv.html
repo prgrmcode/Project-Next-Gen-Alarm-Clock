@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV page</title>
+  <link rel="shortcut icon" href="../img/favicon/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/cv.css" />
+  <!--jquery and bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--font awesome css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <script src="../contact/contact.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html"><img class="logo" src="../img/logo.PNG" alt="logo Alarmclock"></a>
+    <p class="title"> <span> Nex-Gen Alarm Clock</span></p>
+  </header>
+
+  <nav>
+    <ul class="taskbar">
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="../project/project.html">My Project</a>
+      </li>
+      <li>
+        <a href="cv.html">About me</a>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="../contact/contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="about" class="about-container">
+    <div class="about-header">
+      <h1>About Me</h1>
+    </div>
+
+    <div class="about-points">
+      <hr>
+      <ul>
+        <li class="points">I am Harun and I am from Turkey</li>
+        <li class="points">
+          Currently university student at
+          <a href="https://www.thomasmore.be/opleidingen/professionele-bachelor/elektronica-ict/applied-artificial-intelligence"
+            target="_blank"> Thomas More
+          </a>.
+        </li>
+        <li class="points">I am 29 and I have studied mechanical engineering
+          before in Turkey.</li>
+        <li class="points">I worked in an administrative position for 4 years in Turkey.</li>
+        <li class="points">My hobbies are skiing, playing tennis, travelling.</li>
+      </ul>
+    </div>
+    <hr>
+  </div>
+  </div>
+
+  <div id="projects" class="projects">
+    <div class="projects-header">
+      <div class="header-container">
+        <h1 class="header">Projects</h1>
+      </div>
+      <hr>
+    </div>
+
+    <div class="projects-body">
+      <div class="projects-body-container">
+        <div class="projects-row">
+          <div class="col-p projects-1">
+            <div class="card">
+              <a href="https://medium.com/redcrosscbs/codeathon-6-0-brussels-242b6f34e31e" target="_blank"
+                rel="noopener noreferrer" class="image-link">
+                <img class="card-img" src="../img/recross.PNG" alt="Redcross coding" />
+              </a>
+              <div class="card-body">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#1">
+                  Click For Details
+                  <i class="fas fa-caret-down"></i>
+                </button>
+                <div id="1" class="body-collapse">
+                  <div class="collapse-container">
+                    <div>
+                      <div class="collapse-container-data">
+                        <h5> <a href="https://www.cbsrc.org/">CBS Website</a> </h5>
+                        <p class="about-project">
+                          Codeathon 6.0 Brussels to improve various features of
+                          the new CBS platform and contributing to saving lives.
+                        </p>
+                      </div>
+                      <div class="collapse-container-data">
+                        <h5>Technologies</h5>
+                        <ul class="project-1-technologies">
+                          <li class="techlologies-item">React</li>
+                          <li class="techlologies-item">HTML</li>
+                          <li class="techlologies-item">Javascript</li>
+                        </ul>
+                      </div>
+                      <div class="collapse-container-data">
+                        <a href="https://medium.com/redcrosscbs/codeathon-6-0-brussels-242b6f34e31e" target="_blank"
+                          rel="noopener noreferrer" class="card-title">
+                          <button>Visit the Website
+                            <i class="fas fa-long-arrow-alt-right pl-2"></i></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-p projects-2">
+            <div class="card">
+              <a class="image-link" href="https://bivakzone.herokuapp.com/" target="_blank"
+                rel="noopener noreferrer"><img class="card-img" src="../img/bivak.png" alt="Bivouac zone-shelter"></a>
+              <div class="card-body">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#2">Click
+                  For Details<i class="fas fa-caret-down"></i></button>
+                <div id="2" class="body-collapse">
+                  <div class="collapse-container">
+                    <div>
+                      <div class="collapse-container-data">
+                        <h5>Locate Your Bivak (Bivouac) Zone</h5>
+                        <p class="about-project">a website to indicate
+                          bivakzones in Belgium in a map that helps nature and camp addicts to find a bivouac zone to
+                          put their tents on.</p>
+                      </div>
+                      <div class="collapse-container-data">
+                        <h5>Technologies</h5>
+                        <ul class="project-2-technologies">
+                          <li class="techlologies-item">React</li>
+                          <li class="techlologies-item">Heroku</li>
+                          <li class="techlologies-item">Leaflet</li>
+                          <li class="techlologies-item">React-Leaflet</li>
+                          <li class="techlologies-item">Mongodb</li>
+                          <li class="techlologies-item">Express</li>
+                          <li class="techlologies-item">Open Street Map</li>
+                        </ul>
+                      </div>
+                      <div class="collapse-container-data">
+                        <a href="https://bivakzone.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                          class="card-title"><button class="btn btn-outline-success btn-sm">Visit Website
+                            <i class="fas fa-long-arrow-alt-right pl-2"></i></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--contact:-->
+  <div id="contact" class="container-contact">
+    <div class="contact-headers">
+      <div class="contact-header">
+        <h1>Contact Me</h1>
+      </div>
+      <hr />
+    </div>
+    <div class="row-contact">
+      <div class="form-box">
+        <h2 class="pb-2">Let's Talk</h2>
+        <form action="mailto:r0830995@student.thomasmore.be" onsubmit="return validateForm()" name="contact"
+          method="POST" enctype="multipart/form-data">
+          <fieldset>
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="form-group">
+              <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <span>Gender:</span>
+                <br>
+                <label for="male">male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">female</label>
+                <input type="radio" id="female" name="gender" value="female">
+              </p>
+            </div>
+            <div class="form-group">
+              <hr>
+              <p>
+                <label for="province">Province:</label>
+                <!--drop-down menu:-->
+                <select name="provinces" id="province">
+                  <option value="limburg">Limburg</option>
+                  <option value="east flanders">East Flanders</option>
+                  <option value="west flanders"> West Flanders</option>
+                  <option value="vlaams-brabant">Vlaams-Brabant</option>
+                  <option value="antwerp">Antwerp</option>
+                  <option value="hainaut">Hainaut</option>
+                  <option value="liège">Liège</option>
+                  <option value="luxembourg">Luxembourg</option>
+                  <option value="namur">Namur</option>
+                  <option value="waals-brabant">Waals-Brabant</option>
+                  <option value="abroad">Abroad</option>
+
+                </select>
+              </p>
+              <hr>
+            </div>
+            <div class="form-group">
+              <hr>
+              <p>
+                <span>Liked the website?</span>
+                <br>
+                <input type="checkbox" id="recommend" name="site" value="recommend" />
+                <label for="recommend">Recommend it</label>
+                <br>
+                <input type="checkbox" name="site" id="dislike" value="disliked" />
+                <label for="dislike">Don't recommend it</label>
+                <br>
+                <input type="checkbox" name="site" id="improve" value="might-improved" />
+                <label for="improve">It might be improved</label>
+              </p>
+              <hr>
+            </div>
+
+            <div class="form-group">
+              <p>
+                <label for="remark">Your remarks:</label>
+                <br>
+                <textarea name="remarks" id="remark" placeholder="Your Message and Remarks" rows="10"
+                  cols="100"></textarea>
+              </p>
+            </div>
+          </fieldset>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>
+      Copyright © Thomas More Mechelen-Antwerp vzw - Campus
+      De Nayer - Professional bachelor electronics-ict - 2021
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

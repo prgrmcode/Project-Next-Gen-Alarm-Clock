@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV page</title>
+  <link rel="shortcut icon" href="../img/favicon/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+
+  <script src="contact.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html"><img class="logo" src="../img/logo.PNG" alt="logo Alarmclock"></a>
+    <p class="title"> <span> Nex-Gen Alarm Clock</span></p>
+  </header>
+
+  <nav>
+    <ul class="taskbar">
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="../project/project.html">My Project</a>
+      </li>
+      <li>
+        <a href="../cv/cv.html">About me</a>
+
+      </li>
+      <li>
+        <a href="">Components</a>
+      </li>
+      <li>
+        <a href="../contact/contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!--contact:-->
+  <div id="contact" class="container-contact">
+    <div class="contact-headers">
+      <div class="contact-header">
+        <h1>Contact Me</h1>
+      </div>
+      <hr />
+    </div>
+    <div class="row-contact">
+      <div class="form-box">
+        <h2 class="pb-2">Let's Talk</h2>
+        <form action="mailto:r0830995@student.thomasmore.be" onsubmit="return validateForm()" name="contact"
+          method="POST" enctype="multipart/form-data">
+          <fieldset>
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="form-group">
+              <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" />
+              </p>
+            </div>
+            <div class="form-group">
+              <p>
+                <span>Gender:</span>
+                <br>
+                <label for="male">male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">female</label>
+                <input type="radio" id="female" name="gender" value="female">
+              </p>
+            </div>
+            <div class="form-group">
+              <hr>
+              <p>
+                <label for="province">Province:</label>
+                <!--drop-down menu:-->
+                <select name="provinces" id="province">
+                  <option value="limburg">Limburg</option>
+                  <option value="east flanders">East Flanders</option>
+                  <option value="west flanders"> West Flanders</option>
+                  <option value="vlaams-brabant">Vlaams-Brabant</option>
+                  <option value="antwerp">Antwerp</option>
+                  <option value="hainaut">Hainaut</option>
+                  <option value="liège">Liège</option>
+                  <option value="luxembourg">Luxembourg</option>
+                  <option value="namur">Namur</option>
+                  <option value="waals-brabant">Waals-Brabant</option>
+                  <option value="abroad">Abroad</option>
+
+                </select>
+              </p>
+              <hr>
+            </div>
+            <div class="form-group">
+              <hr>
+              <p>
+                <span>Liked the website?</span>
+                <br>
+                <input type="checkbox" id="recommend" name="site" value="recommend" />
+                <label for="recommend">Recommend it</label>
+                <br>
+                <input type="checkbox" name="site" id="dislike" value="disliked" />
+                <label for="dislike">Don't recommend it</label>
+                <br>
+                <input type="checkbox" name="site" id="improve" value="might-improved" />
+                <label for="improve">It might be improved</label>
+              </p>
+              <hr>
+            </div>
+
+            <div class="form-group">
+              <p>
+                <label for="remark">Your remarks:</label>
+                <br>
+                <textarea name="remarks" id="remark" placeholder="Your Message and Remarks" rows="10"
+                  cols="100"></textarea>
+              </p>
+            </div>
+          </fieldset>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>
+      Copyright © Thomas More Mechelen-Antwerp vzw - Campus
+      De Nayer - Professional bachelor electronics-ict - 2021
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

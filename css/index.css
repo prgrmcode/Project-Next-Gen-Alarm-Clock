@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../img/background/wp1894875-motherboard-wallpapers.jpg');
+}
+
+/** header: **/
+header {
+  display: block;
+  border-bottom: 4px solid rgb(164, 214, 24);
+  background-color: #fff;
+  /** background-image: url('../img/background/wp2163708-arduino-wallpapers.jpg');
+  **/
+}
+
+.logo {
+  float: left;
+  width: 9em;
+  margin: 1rem;
+  border-radius: 40%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  padding: 2em 0em;
+  color: #fff;
+  vertical-align: baseline;
+}
+
+.title > span {
+  background-color: rgb(202, 22, 22);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/** Nav: **/
+nav {
+  background-color: currentColor;
+  display: block;
+}
+
+.taskbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /** justify-content: space-between; */
+}
+
+.taskbar li {
+  width: 10em;
+  text-align: center;
+  border: 1px solid green;
+  border-top: none;
+  border-bottom: none;
+}
+
+.taskbar a {
+  padding: 1rem 1rem;
+  color: bisque;
+  text-decoration: none;
+  display: block;
+}
+
+.taskbar a:hover {
+  background-color: rgb(253, 253, 253);
+  color: rgb(0, 175, 9);
+}
+
+/** content: */
+.content-page {
+  margin-top: 5em;
+  padding: 2em;
+  height: 70%;
+}
+
+.content-page h1 {
+  background-color: rgb(231, 200, 200);
+  color: red;
+  padding: 1em;
+  transform: rotate(-29deg);
+}
+
+.welcome {
+  float: left;
+  width: 30%;
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+.explain {
+  float: left;
+  background-image: linear-gradient(to right, grey, white);
+
+  color: blue;
+  width: 45%;
+  padding: 0.5em;
+}
+
+.content-page ul {
+  float: right;
+  background-color: gold;
+  margin-top: 4em;
+  margin-right: 21em;
+  padding: 1rem;
+  text-shadow: 0 0 3px pink, 0 0 5px rgb(251, 8, 49), 0 0 7px rgb(252, 132, 152),
+    0 0 10px rgb(252, 132, 152), 0 0 11px rgb(252, 132, 152), 0 0 15px rgb(252, 132, 152),
+    0 0 18px rgb(252, 132, 152), 0 0 20px rgb(252, 132, 152), 0 0 23px rgb(253, 0, 0);
+}
+
+/** footer: **/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/background/thomas\ more\ footer.jpg');
+  color: cyan;
+  padding: 19px;
+  text-align: center;
+  border-top: 2.5px solid rgb(22, 17, 14);
+  margin-top: 40px;
+  border-bottom: 2.5px solid rgb(24, 13, 7);
+  margin-bottom: 0px;
+}

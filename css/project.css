@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../img/background/wp1894875-motherboard-wallpapers.jpg');
+}
+
+header {
+  display: block;
+  border-bottom: 4px solid rgb(164, 214, 24);
+  margin-top: 0%;
+  padding-bottom: 2em;
+  background-image: url('../img/background/wp2163708-arduino-wallpapers.jpg');
+}
+
+.logo {
+  float: left;
+  width: 9em;
+  margin: 1rem;
+  border-radius: 40%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  padding: 1.5em;
+  padding-top: 2em;
+  color: #fff;
+  margin: 0;
+}
+
+.title > span {
+  background-color: rgb(202, 22, 22);
+}
+
+.about {
+  width: 20%;
+  background-color: rgb(54, 80, 80);
+  color: rgb(198, 209, 100);
+  margin: 1%;
+  padding: 1.5%;
+  border: 2.5px solid rgb(243, 240, 240);
+}
+
+/** slide : **/
+.slide-container {
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.slide-container:hover {
+  display: block;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-bottom-container {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 0.01em 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+}
+
+.slide-bottom-container:after,
+.slide-bottom-container:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.slide-left,
+.slide-right,
+.slide-bottom-badge {
+  cursor: pointer;
+}
+
+.slide-left {
+  float: left;
+  color: rgb(224, 197, 197);
+  padding-left: 1%;
+}
+
+.slide-right {
+  float: right;
+  color: rgb(224, 197, 197);
+  padding-right: 1%;
+}
+
+.slide-left:hover,
+.slide-right:hover {
+  color: #b4aa50;
+}
+
+.slide-bottom-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #ccc !important;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.slide-bottom-badge:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.slide-white {
+  color: #000;
+  background-color: #fff;
+}
+
+/** footer: **/
+footer {
+  background-image: url('../img/background/thomas\ more\ footer.jpg');
+  color: cyan;
+  padding: 19px;
+  text-align: center;
+  border-top: 2.5px solid rgb(22, 17, 14);
+  margin-top: 21px;
+  border-bottom: 2.5px solid rgb(24, 13, 7);
+  margin-bottom: 0px;
+}

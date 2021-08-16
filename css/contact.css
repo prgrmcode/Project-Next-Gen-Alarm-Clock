@@ -1,0 +1,152 @@
+body {
+  font-family: Helvetica, 'Roboto', Arial, 'Poppins', sans-serif;
+  background-image: url('../img/background/');
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+/** header: **/
+header {
+  display: block;
+  border-bottom: 4px solid rgb(164, 214, 24);
+  background-color: #fff;
+  /** background-image: url('../img/background/wp2163708-arduino-wallpapers.jpg');
+  **/
+}
+
+.logo {
+  float: left;
+  width: 9em;
+  margin: 1rem;
+  border-radius: 40%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  padding: 2em 0em;
+  color: #fff;
+  vertical-align: baseline;
+}
+
+.title > span {
+  background-color: rgb(202, 22, 22);
+}
+
+/** Nav: **/
+nav {
+  background-color: currentColor;
+  display: block;
+}
+
+.taskbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 0;
+  /** justify-content: space-between; */
+}
+
+.taskbar li {
+  width: 10em;
+  text-align: center;
+  border: 1px solid green;
+  border-top: none;
+  border-bottom: none;
+}
+
+.taskbar a {
+  padding: 1rem 1rem;
+  color: bisque;
+  text-decoration: none;
+  display: block;
+}
+
+.taskbar a:hover {
+  background-color: rgb(253, 253, 253);
+  color: rgb(0, 175, 9);
+}
+
+.taskbar li ul {
+  position: absolute;
+  width: 150px;
+  display: none;
+}
+
+/** on hover to top element: */
+.taskbar li:hover ul {
+  display: block;
+}
+
+.taskbar li li {
+  background-color: rgb(22, 17, 14);
+  color: white;
+}
+
+/* For mobile phones: */
+.container-contact {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 576px) {
+  .container-contact {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+/* For desktops and laptop PC.s: */
+@media only screen and (min-width: 768px) {
+  .container-contact {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/** contact: **/
+p {
+  margin: 0 0 20px;
+}
+
+.form-box {
+  padding: 2em;
+  margin: 3em;
+  border: 2px solid transparent;
+  width: 30%;
+  float: left;
+}
+
+.form-control {
+  display: block;
+  width: 40%;
+  border-radius: 3px;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: x-large;
+}
+
+/** footer: **/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/background/thomas\ more\ footer.jpg');
+  color: cyan;
+  padding: 19px;
+  text-align: center;
+  border-top: 2.5px solid rgb(22, 17, 14);
+  border-bottom: 2.5px solid rgb(24, 13, 7);
+  margin-bottom: 0px;
+  vertical-align: middle;
+}
