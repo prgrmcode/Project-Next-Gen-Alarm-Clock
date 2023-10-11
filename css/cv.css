@@ -371,6 +371,12 @@ nav {
 }
 
 /** contact: **/
+.contact-header {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 .form-box {
   padding: 1em;
   margin: 3em;

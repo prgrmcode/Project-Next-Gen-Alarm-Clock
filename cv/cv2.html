@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    section {
+      background-color: white;
+      padding: 2rem;
+      margin: 1rem;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007BFF;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: #007BFF;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .portfolio-item {
+      margin-bottom: 2rem;
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #contact a {
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer with a strong background in front-end and back-end technologies. I love creating
+      interactive and user-friendly websites that provide exceptional user experiences.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Full Stack Developer</h3>
+      <p>XYZ Company | Jan 2020 - Present</p>
+      <ul>
+        <li>Developed and maintained web applications using HTML, CSS, JavaScript, and React.</li>
+        <li>Designed and implemented RESTful APIs for data retrieval and manipulation.</li>
+        <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Front-end Developer</h3>
+      <p>ABC Agency | May 2018 - Dec 2019</p>
+      <ul>
+        <li>Created responsive and pixel-perfect web designs using HTML and CSS.</li>
+        <li>Implemented interactive features and animations using JavaScript and jQuery.</li>
+        <li>Optimized website performance and ensured compatibility across various browsers.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>Bachelor's Degree in Computer Science</h3>
+      <p>University Name | Graduated May 2017</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>React, Vue.js</li>
+      <li>Node.js, Express.js</li>
+      <li>RESTful API Development</li>
+      <li>Database Management (SQL, MongoDB)</li>
+      <li>Version Control (Git)</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+      <img src="project1.jpg" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>A brief description of Project 1.</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="project2.jpg" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>A brief description of Project 2.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch with me, feel free to send an email to <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+  </section>
+</body>
+</html>
