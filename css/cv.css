@@ -1,8 +1,8 @@
 body {
-  font-family: Helvetica, 'Roboto', Arial, 'Poppins', sans-serif;
-  background-image: url('../img/background/');
-  display: flex;
-  flex-direction: column;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  color: #333;
   font-size: 16px;
 }
 
@@ -10,72 +10,59 @@ li {
   font-size: 16px;
 }
 
-/** header: **/
+/* Header Styles */
 header {
-  display: block;
-  border-bottom: 4px solid rgb(164, 214, 24);
-  background-color: #fff;
-  /** background-image: url('../img/background/wp2163708-arduino-wallpapers.jpg');
-  **/
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 
 .logo {
-  float: left;
-  width: 9em;
-  margin: 1rem;
-  border-radius: 40%;
+  width: 100px;
+  height: auto;
+  margin-right: 1rem;
 }
 
 .title {
   text-align: center;
-  font-size: 2em;
-  padding: 2em 0em;
+  font-size: 2rem;
   color: #fff;
-  vertical-align: baseline;
 }
 
-.title > span {
-  background-color: rgb(202, 22, 22);
+.title span {
+  background-color: #ea7f28;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
 }
 
-/** Nav: **/
+/* Navigation Styles */
 nav {
-  background-color: currentColor;
-  display: block;
+  background-color: #333;
 }
 
 .taskbar {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-bottom: 0;
-  /** justify-content: space-between; */
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .taskbar li {
-  width: 10em;
-  text-align: center;
-  border: 1px solid green;
-  border-top: none;
-  border-bottom: none;
+  margin: 0;
+  position: relative;
 }
 
 .taskbar a {
-  padding: 1rem 1rem;
-  color: bisque;
   text-decoration: none;
+  color: #fff;
+  padding: 1rem 1.5rem;
   display: block;
 }
 
 .taskbar a:hover {
-  background-color: rgb(253, 253, 253);
-  color: rgb(0, 175, 9);
-}
-
-.taskbar li ul {
-  position: absolute;
-  width: 150px;
-  display: none;
+  background-color: #ea7f28;
 }
 
 /** on hover to top element: */
@@ -83,63 +70,79 @@ nav {
   display: block;
 }
 
+.taskbar li ul {
+  position: absolute;
+  display: none;
+  background-color: #333;
+}
+
 .taskbar li li {
-  background-color: rgb(22, 17, 14);
-  color: white;
+  display: block;
 }
 
-/** about content: */
+
+
+/* About Me Section Styles */
 .about-container {
-  width: 100%;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 2em auto;
-  padding-top: 5em;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
   text-align: center;
 }
 
-.about-header {
-  text-align: center;
-}
+
 
 .about-header h1 {
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 4rem;
-}
-
-.about-container hr {
-  width: 100%;
-  margin-top: 5rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #333;
 }
 
 .about-points hr {
-  width: 60%;
-  margin-top: 1.5em;
-  margin-bottom: 3em;
-}
-
-.about-points {
-  position: relative;
-}
-
-.about-points ul {
-  text-align: left;
-  display: inline-block;
-  list-style-type: square;
+  border-top: 2px solid #ea7f28;
+  margin: 2rem 0;
 }
 
 .points {
   font-size: 1.5rem;
-  font-variant: normal;
-  font: 500;
+  margin: 1rem 0;
 }
 
 .points a {
   text-decoration: wavy;
 }
+
+
+
+/* Skills Section Styles */
+.skills-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.skills-header h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.skills-points hr {
+  border-top: 2px solid #ea7f28;
+  margin: 2rem 0;
+}
+
+.points {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+
 
 /** projects: **/
 
@@ -345,6 +348,94 @@ nav {
   height: 100%;
 }
 
+
+/* Contact Section Styles */
+.container-contact {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.contact-headers h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.form-box {
+  background-color: #f9f9f9;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  width: 50%;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+}
+
+.form-control::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.form-button {
+  background-color: #ea7f28;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-button:hover {
+  background-color: #ffaa58;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group span {
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0.5rem 0;
+}
+
+/** footer: **/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/background/thomas\ more\ footer.jpg');
+  color: cyan;
+  padding: 19px;
+  text-align: center;
+  border-top: 2.5px solid rgb(22, 17, 14);
+  border-bottom: 2.5px solid rgb(24, 13, 7);
+  margin-bottom: 0px;
+  vertical-align: middle;
+}
+
 /* For mobile phones: */
 .col-p {
   -ms-flex: 0 0 100%;
@@ -368,39 +459,4 @@ nav {
     flex: 0 0 50%;
     max-width: 50%;
   }
-}
-
-/** contact: **/
-.contact-header {
-  text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-.form-box {
-  padding: 1em;
-  margin: 3em;
-  border: 2px solid transparent;
-  width: 30%;
-  float: left;
-}
-
-.form-control {
-  display: block;
-  width: 40%;
-  border-radius: 3px;
-}
-
-/** footer: **/
-footer {
-  display: flex;
-  flex-direction: column;
-  background-image: url('../img/background/thomas\ more\ footer.jpg');
-  color: cyan;
-  padding: 19px;
-  text-align: center;
-  border-top: 2.5px solid rgb(22, 17, 14);
-  border-bottom: 2.5px solid rgb(24, 13, 7);
-  margin-bottom: 0px;
-  vertical-align: middle;
 }
